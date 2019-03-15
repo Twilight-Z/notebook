@@ -16,7 +16,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 一直回车确认
 
-'''
+```
 
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
@@ -26,19 +26,19 @@ Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
 Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
 The key fingerprint is:
 
-'''
+```
 
 ### 4.查看复制私钥
 
 私钥：
-'''
+```
 $ cat .ssh/id_rsa.pub
-'''
+```
 
 公钥：
-'''
+```
 $ cat .ssh/id_rsa
-'''
+```
 
 ### 5.启动秘钥
 
