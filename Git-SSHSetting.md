@@ -6,7 +6,7 @@
 ### 1.打开Git Bash
 
 
-### 2. 生成秘钥
+### 2.生成秘钥
 
 在Git Bash输入命令（邮箱填自己的）：
 
@@ -46,7 +46,7 @@ $ cat .ssh/id_rsa
 
 ### 5.启动秘钥
 
-进入GitHub(https://github.com/)登录用户setting（你的设置）
+进入GitHub (https://github.com/) 登录用户setting（你的设置）
 
 进入个人设置列表的SSH and GPG keys
 
