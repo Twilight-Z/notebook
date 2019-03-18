@@ -34,14 +34,18 @@ The key fingerprint is:
 
 ### 4.查看复制私钥
 
-私钥：
+私钥(出错可以第二条，用户名填自己)：
 ```
 $ cat .ssh/id_rsa.pub
+
+$ cat /c/Users/Administrator/.ssh/id_rsa.pub
 ```
 
-公钥：
+公钥(出错可以第二条，用户名填自己)：
 ```
 $ cat .ssh/id_rsa
+
+$ cat /c/Users/Administrator/.ssh/id_rsa
 ```
 
 ### 5.启动秘钥
