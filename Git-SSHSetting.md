@@ -46,7 +46,7 @@ $ cat .ssh/id_rsa
 
 ### 5.启动秘钥
 
-进入git用户setting（你的设置）
+进入GitHub(https://github.com/)登录用户setting（你的设置）
 
 进入个人设置列表的SSH and GPG keys
 
