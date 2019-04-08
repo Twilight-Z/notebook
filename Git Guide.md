@@ -6,6 +6,8 @@
 git init
 ```
 
+
+
 ### 检出仓库
 执行如下命令以创建一个本地仓库的克隆版本：
 ```
@@ -15,6 +17,8 @@ git clone /path/to/repository
 ```
 git clone username@host:/path/to/repository
 ```
+
+
 
 ### 添加与提交
 你可以计划改动（把它们添加到缓存区），使用如下命令：
@@ -28,6 +32,8 @@ git add *
 git commit -m "代码提交信息"
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。 
 
+
+
 ### 推送改动
 你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库：
 ```
@@ -39,6 +45,8 @@ git push origin master
 git remote add origin <server>
 ```
 如此你就能够将你的改动推送到所添加的服务器上去了。
+
+
 
 ### 更新与合并
 要更新你的本地仓库至最新改动，执行：
@@ -60,6 +68,8 @@ git add <filename>
 ```
 git diff <source_branch> <target_branch>
 ```
+
+
 
 ### 替换本地改动
 假如你做错事（自然，这是不可能的），你可以使用如下命令替换掉本地改动：
