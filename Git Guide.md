@@ -3,6 +3,7 @@
 ### 创建新仓库:
 创建新文件夹，打开，然后执行 
 `git init`
+</br></br></br>
 
 
 ### 检出仓库:
@@ -14,6 +15,7 @@ git clone /path/to/repository
 ```
 git clone username@host:/path/to/repository
 ```
+</br></br></br>
 
 
 ### 添加与提交:
@@ -27,6 +29,7 @@ git add *
 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：
 git commit -m "代码提交信息"
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。 
+</br></br></br>
 
 
 ### 推送改动:
@@ -40,6 +43,7 @@ git push origin master
 git remote add origin <server>
 ```
 如此你就能够将你的改动推送到所添加的服务器上去了。
+</br></br></br>
 
 
 ### 更新与合并:
@@ -62,6 +66,7 @@ git add <filename>
 ```
 git diff <source_branch> <target_branch>
 ```
+</br></br></br>
 
 
 
@@ -79,4 +84,5 @@ git fetch origin
 ```
 git reset --hard origin/master 
 ```
+</br></br></br>
 
