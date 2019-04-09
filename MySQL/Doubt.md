@@ -2,6 +2,6 @@
 
 ### 1、数据库乱码
 ```
-mysql>SET charset gbk;
+mysql> SET charset gbk;
 ```
 设置数据库编码
