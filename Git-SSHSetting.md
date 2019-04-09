@@ -4,7 +4,7 @@
 
 
 ### 1.打开Git Bash
-
+<br><br><br>
 
 ### 2.生成秘钥
 
@@ -15,12 +15,14 @@
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ```
+<br><br><br>
 
 ### 3.确认生成秘钥
 
 一直回车确认
 
 ```
+<br><br><br>
 
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
@@ -47,6 +49,7 @@ $ cat .ssh/id_rsa
 
 $ cat /c/Users/Administrator/.ssh/id_rsa
 ```
+<br><br><br>
 
 ### 5.启动秘钥
 
@@ -57,6 +60,7 @@ $ cat /c/Users/Administrator/.ssh/id_rsa
 点击New SSH key（新的秘钥）
 
 在key里粘贴刚刚复制的秘钥即可
+<br><br><br>
 
 ### 6.完成设置
 
