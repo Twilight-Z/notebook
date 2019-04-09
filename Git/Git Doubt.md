@@ -2,7 +2,8 @@
 
 ### 1、fatal: remote origin already exists. 
 git 添加远程github仓库的时候提示错误：fatal: remote origin already exists. 
-(Git错误：远程原点已经存在。 )
+(Git错误：远程仓库已经存在。 )
+解决步骤：
 
 ###### 1.先删除远程 Git 仓库
 `$ git remote rm origin`
