@@ -36,8 +36,8 @@ php存在问题，7.2.0已经解决，不过部分console软件为了兼容开�
 设置右键菜单等
 
 + Command那一行的设置：cmd -new_console:d: !ConEmuWorkDir! /C "d:\cmder\vendor\git-for-windows\bin\bash --login -i"
-++ new_console:d:指定目录，`!ConEmuWorkDir!`代表右键菜单点击时候的目录名，注意前后一定要是空格，否则不会被识别为预定义变量
-++ cmd /C 是执行某个命令，填写bash的位置即可
+   + new_console:d:指定目录，`!ConEmuWorkDir!`代表右键菜单点击时候的目录名，注意前后一定要是空格，否则不会被识别为预定义变量
+   + cmd /C 是执行某个命令，填写bash的位置即可
 + Icon file设置icon的目录
   这个bash也是可以设置`~/.bash`和`~/.bash_profile`的
 
