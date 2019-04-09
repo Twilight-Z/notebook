@@ -11,6 +11,8 @@ mysql> SET charset gbk;
 ### 2、数据显示不对齐
 ```
 mysql --default-character-set=latin1 -uroot -pxxx
+```
+```
 mysql --default-character-set=gbk -uroot -pxxx
 ```
 设置中文字符集
