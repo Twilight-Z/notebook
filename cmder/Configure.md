@@ -39,7 +39,7 @@ Integretion
 设置右键菜单等
 
 + Command那一行的设置：cmd -new_console:d: !ConEmuWorkDir! /C "d:\cmder\vendor\git-for-windows\bin\bash --login -i"
-++ new_console:d:指定目录，!ConEmuWorkDir!代表右键菜单点击时候的目录名，注意前后一定要是空格，否则不会被识别为预定义变量
+++ new_console:d:指定目录，`!ConEmuWorkDir!`代表右键菜单点击时候的目录名，注意前后一定要是空格，否则不会被识别为预定义变量
 ++ cmd /C 是执行某个命令，填写bash的位置即可
 + Icon file设置icon的目录
   这个bash也是可以设置`~/.bash`和`~/.bash_profile`的
@@ -65,8 +65,9 @@ cmder /unregister user/all
 
 NOTE:这个时候windows cmd里边的环境变量此时不会载入，也许要特殊设置task？？有知道的大佬可以留言指导一下，蟹蟹罗~
 
-PS：这个bash的工作目录不是通过命令行参数传递的，写一个bat脚本获取vscode传给调用shell程序的参数就知道了，bat脚本里通过%1获取第一个参数
-可能的bug
+PS：这个bash的工作目录不是通过命令行参数传递的，写一个bat脚本获取vscode传给调用shell程序的参数就知道了，bat脚本里通过`%1`获取第一个参数\
+<br><br><br>
 
+### 可能的bug
 如果是windows 10版本是1703，在vscode中使用终端的时候非英文环境可能存在输出异常，只要下载 KB4020102补丁即可。
 <br><br><br>
