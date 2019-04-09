@@ -11,11 +11,11 @@ mysql> SET charset gbk;
 ### 2、数据显示不对齐
 默认设置：
 ```
-mysql --default-character-set=latin1 -uroot -pxxx
+mysql --default-character-set=latin1 -uroot -p
 ```
 万国码设置（中文乱码用这个）：
 ```
-mysql --default-character-set=gbk -uroot -pxxx
+mysql --default-character-set=gbk -uroot -p
 ```
 设置中文字符集
 <br><br><br>
