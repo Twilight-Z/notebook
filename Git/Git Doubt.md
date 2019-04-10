@@ -39,8 +39,17 @@ git –如何撤销已放入缓存区（Index区）的修改
 另外可以使用 `git rm –cached` 文件名 ，可以从缓存区移除文件，使该文件变为未跟踪的状态，
 <br><br><br>
 
-### 3、Git 推送错误
-强行推送
+### 3、Git 推送错误 ! [rejected] 
+```
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/twilight-wendou/ASonc.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+解决方法：强行推送
 ```
 git push -f git@github.com:xxxx
 ```
