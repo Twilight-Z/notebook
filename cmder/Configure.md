@@ -40,9 +40,8 @@ php存在问题，7.2.0已经解决，不过部分console软件为了兼容开�
    + cmd /C 是执行某个命令，填写bash的位置即可
 + Icon file设置icon的目录
   这个bash也是可以设置`~/.bash`和`~/.bash_profile`的
-
+  
 ##### 右键菜单快捷命令
-
 这个的开始目录是固定的
 注册了之后好像去不掉了。。。。
 ```
@@ -53,7 +52,6 @@ cmder /unregister user/all
 
 
 ### 3、和vscode好基友合作
-
 用户配置中制定终端和git的可执行路径
 ```
  "terminal.integrated.shell.windows": "D:\\cmder\\vendor\\git-for-windows\\bin\\bash.exe"，
@@ -65,6 +63,20 @@ cmder /unregister user/all
 **PS**：这个bash的工作目录不是通过命令行参数传递的，写一个bat脚本获取vscode传给调用shell程序的参数就知道了，bat脚本里通过`%1`获取第一个参数\
 <br><br><br>
 
+
 ### 4、可能的bug
 如果是windows 10版本是1703，在vscode中使用终端的时候非英文环境可能存在输出异常，只要下载 KB4020102补丁即可。
 <br><br><br>
+
+
+### 5、解决中文乱码问题
+把一下几行代码添加到config/aliases文件末尾即可解决中文乱码问题：
+```
+l=ls --show-control-chars 
+la=ls -aF --show-control-chars 
+ll=ls -alF --show-control-chars
+ls=ls --show-control-chars -F
+```
+<br><br><br>
+
+
