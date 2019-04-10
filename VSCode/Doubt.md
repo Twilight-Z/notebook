@@ -1,6 +1,7 @@
 # vscode疑难杂症
 
 ### 1、配置别名：这里是我配置git别名和npm别名
+alias <别名>='<内容>'
 + `alias pl="git pull"`
 + `alias ps="git push"`
 + `alias ad="git add"`
