@@ -42,7 +42,8 @@ Bootstrap媒体对象的文档和示例，用于构建高度重复的组件，�
 
 ### 对准
 媒体对象中的媒体可以与flexbox实用程序对齐到内容的顶部（默认），中间或结尾.media-body。
-```顶部对齐的媒体
+顶部对齐的媒体
+```
 <div class="media">
   <img class="align-self-start mr-3" src="..." alt="Generic placeholder image">
   <div class="media-body">
@@ -52,7 +53,8 @@ Bootstrap媒体对象的文档和示例，用于构建高度重复的组件，�
   </div>
 </div>
 ```
-```中心对齐的媒体
+中心对齐的媒体
+```
 <div class="media">
   <img class="align-self-center mr-3" src="..." alt="Generic placeholder image">
   <div class="media-body">
@@ -62,7 +64,8 @@ Bootstrap媒体对象的文档和示例，用于构建高度重复的组件，�
   </div>
 </div>
 ```
-```底部对齐的媒体
+底部对齐的媒体
+```
 <div class="media">
   <img class="align-self-end mr-3" src="..." alt="Generic placeholder image">
   <div class="media-body">
@@ -86,7 +89,9 @@ Bootstrap媒体对象的文档和示例，用于构建高度重复的组件，�
 ```
 
 ### 媒体列表
-因为媒体对象具有如此少的结构要求，所以您还可以在列表HTML元素上使用这些类。在您的<ul>或<ol>，添加.list-unstyled以删除任何浏览器默认列表样式，然后应用于.media您的<li>s。与往常一样，在需要微调的地方使用间隔实用程序。
+因为媒体对象具有如此少的结构要求，所以您还可以在列表HTML元素上使用这些类。
+在您的<ul>或<ol>，添加.list-unstyled以删除任何浏览器默认列表样式，然后应用于.media您的<li>s。
+  与往常一样，在需要微调的地方使用间隔实用程序。
 ```
 <ul class="list-unstyled">
   <li class="media">
