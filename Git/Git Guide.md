@@ -46,6 +46,21 @@ git remote add origin <server>
 </br></br></br>
 
 
+
+### 分支
+分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。
+
+创建一个叫做“feature_x”的分支，并切换过去：
+`git checkout -b feature_x`
+切换回主分支：
+`git checkout master`
+再把新建的分支删掉：
+`git branch -d feature_x`
+除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的：
+`git push origin <branch>`
+
+
+
 ### 更新与合并:
 要更新你的本地仓库至最新改动，执行：
 ```
