@@ -53,3 +53,13 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 git push -f git@github.com:xxxx
 ```
+</br></br></br>
+
+### 4、推送合并错误
+解决方法：
+删除错误的文件在push到主分支
+```
+git add .
+git commit -m "xxx"
+git push origin master
+``` 
