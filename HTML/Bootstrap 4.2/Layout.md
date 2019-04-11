@@ -128,5 +128,5 @@ $zindex-modal-backdrop:    1040 !default;
 $zindex-modal:             1050 !default;
 $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
-``
+```
 为了处理重叠的组件（例如，按钮和输入组的输入）内的边界中，我们使用低单数位z-index的值1，2和3用于默认，悬停状态和活动状态。在悬停/焦点/活动时，我们将一个特定元素带到最前面，使用更高的z-index值来显示它们在兄弟元素上的边界。
