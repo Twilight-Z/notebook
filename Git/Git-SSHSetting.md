@@ -66,4 +66,5 @@ $ cat /c/Users/Administrator/.ssh/id_rsa
 
 设置完成了
 
-现在你可以不用http，而用ssh来上传文件了
+现在你可以不用http，而用ssh来上传文件了 
+<br>
