@@ -86,12 +86,12 @@ F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输�
 
 ### 其他
 
-+ 自动保存：File -> AutoSave ，或者 `Ctrl+Shift+P`，输入 `auto`
++ 自动保存：`File` -> `AutoSave` ，或者 `Ctrl+Shift+P`，输入 `auto`
 
 ### 修改默认快捷键
 
 打开默认键盘快捷方式设置：
-File -> Preferences -> Keyboard Shortcuts，或者：Alt+F -> p -> k
+`File` -> `Preferences` -> `Keyboard Shortcuts`，或者：`Alt+F` -> `p` -> `k`
 
 修改 keybindings.json：
 ```
