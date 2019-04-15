@@ -75,18 +75,18 @@ F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输�
 
 ### 显示相关
 
-    全屏：F11
-    zoomIn/zoomOut：Ctrl +/-
-    侧边栏显/隐：Ctrl+B
-    显示资源管理器 Ctrl+Shift+E
-    显示搜索 Ctrl+Shift+F
-    显示 Git Ctrl+Shift+G
-    显示 Debug Ctrl+Shift+D
-    显示 Output Ctrl+Shift+U
++ 全屏：`F11`
++ zoomIn/zoomOut：`Ctrl +/-`
++ 侧边栏显/隐：`Ctrl+B`
++ 显示资源管理器 `Ctrl+Shift+E`
++ 显示搜索 `Ctrl+Shift+F`
++ 显示 `Git Ctrl+Shift+G`
++ 显示 `Debug Ctrl+Shift+D`
++ 显示 `Output Ctrl+Shift+U`
 
 ### 其他
 
-    自动保存：File -> AutoSave ，或者 Ctrl+Shift+P，输入 auto
++ 自动保存：File -> AutoSave ，或者 `Ctrl+Shift+P`，输入 `auto`
 
 ### 修改默认快捷键
 
