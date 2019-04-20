@@ -4,6 +4,7 @@
 animate.css的使用非常简单，因为它是把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了
 
 下面来详细介绍animate.css里面的类，主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
+[Animate演示](https://daneden.github.io/animate.css/)
 
 ### 【Attention(晃动效果)】
 ```
