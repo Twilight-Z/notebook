@@ -23,11 +23,12 @@
 <br><br>
 
 ### 4、成功
-保存配置，重启vscode。
-侧边栏拓展下面出现SFTP，没有报错就会出现服务器的文件列表。
-找个文件，按右键点击`Edit in Local`编辑模式。
-同时，vscode 工作区文件夹出现服务器文件列表。
-右键列表`Download Folder`下载服务器文件列表。（前一个是上传）
-现在在VS Code中编辑的代码只需保存（command+s或ctrl+s）即可上传到服务器中。
++ 保存配置，重启vscode。
++ 侧边栏拓展下面出现SFTP，没有报错就会出现服务器的文件列表。
++ 找个文件，按右键点击`Edit in Local`编辑模式。
++ 同时，vscode 工作区文件夹出现服务器文件列表。
++ 右键列表`Download Folder`下载服务器文件列表。（前一个是上传）
++ 现在在VS Code中编辑的代码只需保存（command+s或ctrl+s）即可上传到服务器中。
+
 ![blockchain](https://img-blog.csdn.net/20180717170636363?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hhY2tlcl95bA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 "成功")
 <br><br>
