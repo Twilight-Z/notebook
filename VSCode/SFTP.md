@@ -17,7 +17,7 @@
 + host填域名
 + username是服务器用户名（root）
 + password填密码（默认没有， 自己加上一行）
-+ remotePath是需要打到的远程的文件夹地址(填：/wwww/wwwroot)
++ remotePath是需要打到的远程的文件夹地址(填：/www/wwwroot)
   不填也可以，不过加载太多文件容易卡
 + uploadOnSave自动保存
 <br><br>
