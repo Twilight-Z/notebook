@@ -17,6 +17,8 @@
 host填域名
 username是服务器用户名（root）
 password填密码
+remotePath是需要打到的远程的文件夹地址(填：/wwww/wwwroot)
+不填也可以，不过加载太多文件容易卡
 <br><br>
 
 ### 4、成功
