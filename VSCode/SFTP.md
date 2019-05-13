@@ -1,4 +1,4 @@
-# VSCode 链接服务器
+# VSCode 连接服务器
 
 ### 1、安装SFTP拓展
 在侧边栏拓展里搜索SFTP
@@ -21,4 +21,5 @@ password填密码
 
 ### 4、成功
 现在在VS Code中编辑的代码只需保存（command+s或ctrl+s）即可上传到服务器中。
+![blockchain](https://img-blog.csdn.net/20180717170636363?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hhY2tlcl95bA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 "成功")
 <br><br>
