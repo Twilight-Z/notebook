@@ -14,11 +14,11 @@
 ### 3、保存配置
 ![blockchain](https://img-blog.csdn.net/20180717170403866?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hhY2tlcl95bA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 "配置")
 如图所示，把配置项填好。
-host填域名
-username是服务器用户名（root）
-password填密码
-remotePath是需要打到的远程的文件夹地址(填：/wwww/wwwroot)
-不填也可以，不过加载太多文件容易卡
++ host填域名
++ username是服务器用户名（root）
++ password填密码
++ remotePath是需要打到的远程的文件夹地址(填：/wwww/wwwroot)
+  不填也可以，不过加载太多文件容易卡
 <br><br>
 
 ### 4、成功
