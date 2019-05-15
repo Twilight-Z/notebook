@@ -1,15 +1,13 @@
 # VSCode终端 SSH通道设置
 
 ### 0、安装ssh
-##### Linux安装
-`yum install ssh`
+##### Linux安装：`yum install ssh`
 ###### 启动ssh服务器端：
 `service sshd start`
 `chkconfig sshd on`
-<br><br>
 
-##### windows安装
-[freeSSHd.exe](http://www.freesshd.com/?ctt=download)
+##### windows安装：[freeSSHd.exe](http://www.freesshd.com/?ctt=download)
+<br><br>
 
 ### 1、创建秘钥
 打开vscode终端
