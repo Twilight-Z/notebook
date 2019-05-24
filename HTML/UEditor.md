@@ -2,22 +2,19 @@
 
 首先：打开ueditor.all.js(或ueditor.all.min.js)。
 
-1、搜索修改成false：allowDivTransToP: false
+### 1、搜索修改成`false：allowDivTransToP: false`
 
-2、再搜索并修改以下：
-
-//编辑器不能为空内容
-
-if (domUtils.isEmptyNode(me.body)) {
-
-me.body.innerHTML = '<div>' + (browser.ie ? '' : '<br/>') + '</div>';
-
-}
-
-3、搜索“/给文本或者inline节点套p标签”，并且替换以下内容
-
-//给文本或者inline节点套p标签
+### 2、再搜索并修改以下：
 ```
+//编辑器不能为空内容
+if (domUtils.isEmptyNode(me.body)) {
+me.body.innerHTML = '<div>' + (browser.ie ? '' : '<br/>') + '</div>';
+}
+```
+
+### 3、搜索`/给文本或者inline节点套p标签`，并且替换以下内容
+```
+//给文本或者inline节点套p标签
 if (me.options.enterTag == 'p') {
   var child = this.body.firstChild, tmpNode;
   if (!child || child.nodeType == 1 &&
@@ -49,14 +46,15 @@ if (me.options.enterTag == 'p') {
 }
 ```
 
-4、搜索 “进入编辑器的li要套p标签”，这块也要注释掉
+### 4、搜索 “进入编辑器的li要套p标签”，这块也要注释掉
 
-5、注视掉这段
-
+### 5、注视掉这段
+```
 node.className = utils.trim(node.className.replace(/list-paddingleft-\w+/,'')) + ' list-paddingleft-' + type;
-
-6、最后注视掉：
-
+```
+### 6、最后注视掉：
+```
 li.style.cssText && (li.style.cssText = '');
+```
 
-完美解决，以上是整个流程。
+### 完美解决，以上是整个流程。
