@@ -137,24 +137,24 @@ F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输�
 
 ### 前端开发必备插件
 
-> PostCSS Sorting
-> stylelint
-> stylefmt
-> ESLint
-> javascript standard format
-> beautify
-> Babel ES6/ES7
-> Debugger for Chrome
-> Add jsdoc comments
-> javascript(ES6) code snippets
-> vue
-> weex
-> Reactjs code snippets
-> React Native Tools
-> Npm Intellisense
-> Instant Markdown
-> Markdown Shortcuts
-> TextTransform
+>  PostCSS Sorting          
+>  stylelint            
+>  stylefmt         
+>  ESLint           
+>  javascript standard format           
+>  beautify         
+>  Babel ES6/ES7            
+>  Debugger for Chrome          
+>  Add jsdoc comments           
+>  javascript(ES6) code snippets            
+>  vue          
+>  weex         
+>  Reactjs code snippets            
+>  React Native Tools           
+>  Npm Intellisense         
+>  Instant Markdown         
+>  Markdown Shortcuts           
+>  TextTransform            
 
 ### 自定义设置参考
 
