@@ -119,3 +119,33 @@ js代码如下：
 <!--页面加载end-->
 ```
 <br><br><br>
+
+### 4、只允许用户评论一次
+这个功能实现起来也比较简单，只需每次用户发表的评论进数据库之前，从当前文章的所有评论中查找是否有相同的用户名或邮箱已经发表过评论，如果有就跳到错误页面即可。
+
+实现代码，放到当前主题的functions.php中即可（这里还增加了对IP的判断，更保险）：
+```
+// 获取评论用户的ip，参考wp-includes/comment.php
+function ludou_getIP() {
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $ip = preg_replace( '/[^0-9a-fA-F:., ]/', '', $ip );
+    
+  return $ip;
+}
+
+function ludou_only_one_comment( $commentdata ) {
+  global $wpdb;
+  $currentUser = wp_get_current_user();
+  
+  // 不限制管理员发表评论
+  if(empty($currentUser->roles) || !in_array('administrator', $currentUser->roles)) {
+    $bool = $wpdb->get_var("SELECT comment_ID FROM $wpdb->comments WHERE comment_post_ID = ".$commentdata['comment_post_ID']."  AND (comment_author = '".$commentdata['comment_author']."' OR comment_author_email = '".$commentdata['comment_author_email']."' OR comment_author_IP = '".ludou_getIP()."') LIMIT 0, 1;");
+  
+    if($bool)
+      wp_die('本站每篇文章只允许评论一次。<a href="'.get_permalink($commentdata['comment_post_ID']).'">点此返回</a>');
+  }
+  
+  return $commentdata;
+}
+add_action( 'preprocess_comment' , 'ludou_only_one_comment', 20);
+```
