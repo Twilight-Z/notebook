@@ -256,3 +256,28 @@ if(wp_is_mobile()) {
    add_filter('the_content', 'ludou_remove_width_height_attribute', 99);
 }
 ```
+<br><br><br>
+
+### 十、url跳转
+##### 一、页面跳转
+```
+<script language="javascript">
+    document.location= "http://www.xiaoz.me/";
+</script>
+```
+需要注意的是页面的固定链接建议自己设置一下，不要使用中文，否则会被转义增加长度，对SEO不利。 
+
+##### 二、页面跳转
+1、打开Editplus新建一个PHP文件，复制粘贴如下代码,然后另存为go.php再上传到网站根目录。
+
+然后跳转的格式为：`{本站地址}/go.php?url={外链地址}`，例如：
+
+`http://www.xiaoz.me/go.php?url=http://weibo.com/337003006`
+
+2、打开Editplus新建一个PHP文件，复制粘贴如下代码,然后另存为go.php再上传到网站根目录。
+
+这样出来的形式就是`{本站地址}/go.php?{外链地址}`，相对于第一种来说去掉了`url=`，然后稍微简短了一些。 
+
+    最后不要忘记在robots.txt文件中添加：Disallow: /go.php?，防止搜索引擎抓取go.php，不然起不到任何作用。
+
+<br><br><br>
