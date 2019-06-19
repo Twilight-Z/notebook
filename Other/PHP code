@@ -1,0 +1,48 @@
+# PHP 常用代码
+
+### 1、获取真实IP
+```
+//透过代理或者 cdn 获取访客真实 IP
+function get_client_ip() {
+   if (getenv("HTTP_CLIENT_IP") && strcasecmp(getenv("HTTP_CLIENT_IP"), "unknown"))
+       {$ip = getenv("HTTP_CLIENT_IP");}
+   else if (getenv("HTTP_X_FORWARDED_FOR") && strcasecmp(getenv("HTTP_X_FORWARDED_FOR"),
+"unknown"))
+       $ip = getenv("HTTP_X_FORWARDED_FOR");
+   else if (getenv("REMOTE_ADDR") && strcasecmp(getenv("REMOTE_ADDR"), "unknown"))
+       $ip = getenv("REMOTE_ADDR");
+   else if (isset ($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'] && strcasecmp($_SERVER['REMOTE_ADDR'], "unknown"))
+       $ip = $_SERVER['REMOTE_ADDR'];
+   else
+       $ip = "unknown";
+   return ($ip);
+};
+```
+<br><br><br>
+
+
+### 2、IP地址判断
+```
+// IP地址
+function GetIpLookup($ip = '') {
+   if (empty($ip)) {
+       $ip = $this->GetIp();
+   }
+   //淘宝ip接口
+   $res = @file_get_contents('http://ip.taobao.com/service/getIpInfo.php?ip=' . $ip);
+   if (empty($res)) {
+       return false;
+   }
+   $json = json_decode($res, true);
+   if (isset($json['code']) && $json['code'] == 0) {
+       $json['ip'] = $ip;
+       unset($json['ret']);
+   } else {
+       return false;
+   }
+   return $json['data'];
+}
+```
+<br><br><br>
+
+
