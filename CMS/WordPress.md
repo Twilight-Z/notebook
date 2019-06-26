@@ -12,3 +12,4 @@
 + WP125                 广告管理
 + backwpup              备份管理
 + disable Google fonts  关闭谷歌字体
++ Really Simple SSL     ssl安全证书
