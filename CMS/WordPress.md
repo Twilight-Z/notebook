@@ -2,6 +2,7 @@
 
 + jquery colorbox       图片全屏显示
 + mediaElement          视频播放器
++ Smartideo             视频播放插件
 + category order and taxonomy terms order   分类管理
 + hide widget title     小工具管理
 + dynamic widget        动态小工具管理
